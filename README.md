@@ -72,3 +72,18 @@ Treating special characters as ordinary text using backslashes:
 |Negative Digit	|\D	|Any character except digit characters|
 |Negative Word	|\W	|Any character except word characters|
 |Negative Whitespace	|\S	|Any character except whitespace characters|
+
+|Anchor	|Pattern	|Explanation|
+|------ |-------        |-----------|
+|Beginning	|^abc	|Matches abc only at the start of a string|
+|End	|abc$	|Matches abc only at the end of a string|
+|Word boundary	|s\b	|Matches s only when it's followed by a word boundary|
+|Word boundary	|s\B	|Matches s only when it's not followed by a word boundary|
+
+
+
+|Flag	|Pattern	|Explanation|
+|-----  |-------        |-----------|
+|Ignorcase	|(?i)abc	|Matches all different capitalizations of the word abc: Abc, ABC, abC, etc|
+|Ignoring white spaces and comments	|(?x)a b c	|Matches abc|
+
